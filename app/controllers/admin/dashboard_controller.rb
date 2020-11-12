@@ -1,6 +1,8 @@
 class Admin::DashboardController < ApplicationController
   before_filter :authenticate
   def show
+    @category = Category.count(:all)
+    @products = Product.count(:all)
   end
   protected
     def authenticate
