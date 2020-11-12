@@ -39,9 +39,7 @@ class Admin::ProductsController < ApplicationController
   protected
     def authenticate
       authenticate_or_request_with_http_basic do |username, password|
-      if (username == ENV['USERNAME'] && password == ENV['PASSWORD'])
-        return true
-      end
+      username == ENV['USERNAME'] && password == ENV['PASSWORD']
     end
   end
 
