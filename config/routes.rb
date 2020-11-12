@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   end
 
   resources :orders, only: [:create, :show]
+  get '/about', controller: 'about', action: 'show'
+  # resources :about , only: [:show]
   
 
   namespace :admin do
