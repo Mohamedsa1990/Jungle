@@ -11,13 +11,14 @@ Rails.application.routes.draw do
   end
 
   resources :orders, only: [:create, :show]
-  get '/about', controller: 'about', action: 'show'
-  # resources :about , only: [:show]
+  # get '/about', controller: 'about', action: 'show'
+  resources :about , only: [:index]
   
 
   namespace :admin do
     root to: 'dashboard#show'
     resources :products, except: [:edit, :update, :show]
+    resources :categories, except: [:destroy ,:edit, :update, :show]
   end
 
   
