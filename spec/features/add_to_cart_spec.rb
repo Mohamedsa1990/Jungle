@@ -16,12 +16,10 @@ RSpec.feature "AddToCarts", type: :feature, js: true do
     end
   end
   scenario "add to the cart" do
-    # ACT
     visit root_path
     expect(page).to have_link 'My Cart (0)'
     first('article.product').click_on('Add')
     expect(page).to have_link 'My Cart (1)'
     save_screenshot
-
   end
 end
