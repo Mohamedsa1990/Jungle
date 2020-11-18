@@ -1,8 +1,11 @@
 # Jungle
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
-
-
+# Screenshots
+![home page](https://github.com/Mohamedsa1990/Jungle/blob/master/screenshots/Home%20page.png?raw=true)
+![cart page](https://github.com/Mohamedsa1990/Jungle/blob/master/screenshots/cart.png?raw=true)
+![title page](https://github.com/Mohamedsa1990/Jungle/blob/master/screenshots/details.png?raw=true)
+![order page](https://github.com/Mohamedsa1990/Jungle/blob/master/screenshots/order.png?raw=true)
 ## Setup
 
 1. Run `bundle install` to install dependencies
